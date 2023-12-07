@@ -1,21 +1,35 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
-import Home from "./components/Home";
+import SideBar from "./components/SideBar";
+import ActiveStatusBar from "./components/ActiveStatusBar";
+import Discover from "./pages/Discover";
 
-import './App.css'
 
 const App = () => {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route
-          path="/"
-          element={<Home />} />
-        
-      </Routes>
-    </BrowserRouter>
+    <div className="flex relative overflow-hidden scrollbar-hidden">
+
+      <div className="">
+        <SideBar />
+      </div>
+
+        <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar">
+          <BrowserRouter>
+            <Routes>
+              <Route path="/" element={<Discover />} />
+            </Routes>
+          </BrowserRouter>
+        </div>
+
+       
+
+      <div className="absolute h-24 bottom-0 left-0 right-0 bg-white z-10">
+        <ActiveStatusBar />
+      </div>
+
+    </div>
   );
-}
+};
   
 
 export default App;
