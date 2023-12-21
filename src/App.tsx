@@ -14,11 +14,9 @@ const App = () => {
       </div>
 
         <div className="px-6 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar">
-          <BrowserRouter>
             <Routes>
               <Route path="/" element={<Discover />} />
             </Routes>
-          </BrowserRouter>
         </div>
 
        
