@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, Outlet } from "react-router-dom";
 
 import SideBar from "./components/SideBar";
 import ActiveStatusBar from "./components/ActiveStatusBar";
@@ -18,8 +18,8 @@ const App = () => {
               <Route path="/" element={<Discover />} />
             </Routes>
         </div>
-
-       
+        
+        <Outlet />
 
       <div className="absolute h-24 bottom-0 left-0 right-0 bg-white z-10">
         <ActiveStatusBar />
