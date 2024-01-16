@@ -3,6 +3,8 @@ import { Routes, Route, Outlet } from "react-router-dom";
 import SideBar from "./components/SideBar";
 import ActiveStatusBar from "./components/ActiveStatusBar";
 import Discover from "./pages/Discover";
+import Home from "./pages/Home";
+import Playlist from "./pages/Playlist";
 
 
 const App = () => {
@@ -15,7 +17,9 @@ const App = () => {
 
         <div className="px-6 py-5 h-[calc(100vh-72px)] overflow-y-scroll hide-scrollbar">
             <Routes>
-              <Route path="/" element={<Discover />} />
+              <Route path="/" element={<Home />} />
+              <Route path="/discover" element={<Discover />} />
+              <Route path="/playlist" element={<Playlist />} />
             </Routes>
         </div>
         
