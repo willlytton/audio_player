@@ -17,5 +17,5 @@ I took ideas from both the Apple Music and Spotify app as far as inspiration. Du
 
 - [Link-to-Figma-design] (https://www.figma.com/file/jQWTbJoQqHEEyICOFtwreG/Music-App?type=design&node-id=0%3A1&mode=design&t=9GOknJg8qoTYPj40-1)
 
-The great thing about Figma is I am able to think about my Design components like I would React components which in terms of common practices have been sort of a struggle for me. 
+The great thing about Figma is I am able to think about my Design components like I would React components which in terms of common practices has been sort of a struggle for me. 
 
