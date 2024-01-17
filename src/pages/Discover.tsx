@@ -46,12 +46,12 @@ const Discover = () => {
         <div
           key={genre.id}
           className="flex bg-black p-3 rounded-3xl text-center justify-center items-center w-52 h-60 text-white"
-          style={{ 
-            backgroundImage: genre.images && genre.images.length > 0 
-              ? `url(${genre.images[0].url})` 
-              : `#${Math.floor(Math.random() * 16777215).toString(16)}`,
+          style={{
+            backgroundImage:
+              genre.images && genre.images.length > 0
+                ? `url(${genre.images[0].url})`
+                : `#${Math.floor(Math.random() * 16777215).toString(16)}`,
           }}
-          
         >
           <h1>{genre.name}</h1>
         </div>
